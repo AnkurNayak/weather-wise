@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/weather-wise/static/css/main.9e662ed3.css",
-    "main.js": "/weather-wise/static/js/main.abf20303.js",
+    "main.js": "/weather-wise/static/js/main.7c576382.js",
     "static/media/Inter-italic.var.woff2": "/weather-wise/static/media/Inter-italic.var.b27297c148a7ef314ce2.woff2",
     "static/media/Inter-roman.var.woff2": "/weather-wise/static/media/Inter-roman.var.b65534c5223684261945.woff2",
     "static/media/wi-day-sleet.svg": "/weather-wise/static/media/wi-day-sleet.6475a3e0b5a7503d822f.svg",
@@ -29,10 +29,10 @@
     "index.html": "/weather-wise/index.html",
     "static/media/search.svg": "/weather-wise/static/media/search.3c548e8566f540749b27557455ac5f12.svg",
     "main.9e662ed3.css.map": "/weather-wise/static/css/main.9e662ed3.css.map",
-    "main.abf20303.js.map": "/weather-wise/static/js/main.abf20303.js.map"
+    "main.7c576382.js.map": "/weather-wise/static/js/main.7c576382.js.map"
   },
   "entrypoints": [
     "static/css/main.9e662ed3.css",
-    "static/js/main.abf20303.js"
+    "static/js/main.7c576382.js"
   ]
 }
