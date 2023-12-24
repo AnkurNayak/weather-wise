@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/weather-wise/static/css/main.9e662ed3.css",
+    "main.js": "/weather-wise/static/js/main.abf20303.js",
+    "static/media/Inter-italic.var.woff2": "/weather-wise/static/media/Inter-italic.var.b27297c148a7ef314ce2.woff2",
+    "static/media/Inter-roman.var.woff2": "/weather-wise/static/media/Inter-roman.var.b65534c5223684261945.woff2",
+    "static/media/wi-day-sleet.svg": "/weather-wise/static/media/wi-day-sleet.6475a3e0b5a7503d822f.svg",
+    "static/media/wi-day-showers.svg": "/weather-wise/static/media/wi-day-showers.e181607a65fac1609f72.svg",
+    "static/media/wi-day-snow-wind.svg": "/weather-wise/static/media/wi-day-snow-wind.d2f50978becf5d02508a.svg",
+    "static/media/wi-day-snow.svg": "/weather-wise/static/media/wi-day-snow.b0c0373eef1c6c2f055e.svg",
+    "static/media/wi-day-rain.svg": "/weather-wise/static/media/wi-day-rain.320e0e5ad36b9104b579.svg",
+    "static/media/wi-night-sleet.svg": "/weather-wise/static/media/wi-night-sleet.1db77b7d39f7399e60a9.svg",
+    "static/media/wi-day-light-wind.svg": "/weather-wise/static/media/wi-day-light-wind.61214084907a8feb639d.svg",
+    "static/media/wi-day-fog.svg": "/weather-wise/static/media/wi-day-fog.64823203fe2824cd23a7.svg",
+    "static/media/wi-night-showers.svg": "/weather-wise/static/media/wi-night-showers.4f256a38aba5fdfb7079.svg",
+    "static/media/wi-night-snow-wind.svg": "/weather-wise/static/media/wi-night-snow-wind.55d8cc058a45074c082e.svg",
+    "static/media/wi-night-snow.svg": "/weather-wise/static/media/wi-night-snow.9cf34163a2314852af9f.svg",
+    "static/media/wi-day-lightning.svg": "/weather-wise/static/media/wi-day-lightning.debbe249e5112683d6ad.svg",
+    "static/media/wi-snow.svg": "/weather-wise/static/media/wi-snow.41a01da10b2c84abde09.svg",
+    "static/media/wi-day-sunny.svg": "/weather-wise/static/media/wi-day-sunny.c23e7855e1cb8ac7c36d.svg",
+    "static/media/wi-day-cloudy.svg": "/weather-wise/static/media/wi-day-cloudy.d3602df8f1e9ba231925.svg",
+    "static/media/wi-night-rain.svg": "/weather-wise/static/media/wi-night-rain.5cc1d3f4f63383ae4d85.svg",
+    "static/media/wi-night-cloudy-windy.svg": "/weather-wise/static/media/wi-night-cloudy-windy.f14a23dddc82e26bc32a.svg",
+    "static/media/wi-night-fog.svg": "/weather-wise/static/media/wi-night-fog.4658561bc4c6425c9e2d.svg",
+    "static/media/wi-night-lightning.svg": "/weather-wise/static/media/wi-night-lightning.d19e84122b6699436854.svg",
+    "static/media/wi-cloudy.svg": "/weather-wise/static/media/wi-cloudy.ba3686e4a3d64a9dc5cf.svg",
+    "static/media/wi-night-cloudy.svg": "/weather-wise/static/media/wi-night-cloudy.63e94dc14ebec2e6e47f.svg",
+    "static/media/wi-night-clear.svg": "/weather-wise/static/media/wi-night-clear.2923306bed84bccf8845.svg",
+    "index.html": "/weather-wise/index.html",
+    "static/media/search.svg": "/weather-wise/static/media/search.3c548e8566f540749b27557455ac5f12.svg",
+    "main.9e662ed3.css.map": "/weather-wise/static/css/main.9e662ed3.css.map",
+    "main.abf20303.js.map": "/weather-wise/static/js/main.abf20303.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e662ed3.css",
+    "static/js/main.abf20303.js"
+  ]
+}
