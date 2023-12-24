@@ -46,7 +46,7 @@ export default function App() {
                 className=" bg-pink-600 p-4 rounded-lg"
                 onClick={() =>
                   (window.location.href =
-                    "https://github.com/AnkurNayak/weatherwise/blob/main/README.md")
+                    "https://github.com/AnkurNayak/weather-wise/blob/main/README.md")
                 }
               >
                 DOCUMENTATION
