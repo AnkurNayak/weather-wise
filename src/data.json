@@ -1,0 +1,142 @@
+{
+  "0": {
+    "sky": "Clear sky",
+    "dayicon": "wi-day-sunny.svg",
+    "nighticon": "wi-night-clear.svg"
+  },
+  "1": {
+    "sky": "Mainly clear",
+    "dayicon": "wi-day-sunny.svg",
+    "nighticon": "wi-night-clear.svg"
+  },
+  "2": {
+    "sky": "Partly cloudy",
+    "dayicon": "wi-day-cloudy.svg",
+    "nighticon": "wi-night-cloudy.svg"
+  },
+  "3": {
+    "sky": "Overcast",
+    "dayicon": "wi-cloudy.svg",
+    "nighticon": "wi-night-cloudy.svg"
+  },
+  "45": {
+    "sky": "Fog and depositing rime fog",
+    "dayicon": "wi-day-fog.svg",
+    "nighticon": "wi-night-fog.svg"
+  },
+  "48": {
+    "sky": "Fog and depositing rime fog",
+    "dayicon": "wi-day-fog.svg",
+    "nighticon": "wi-night-fog.svg"
+  },
+  "51": {
+    "sky": "Drizzle: Light intensity",
+    "dayicon": "wi-day-light-wind.svg",
+    "nighticon": "wi-night-cloudy-windy.svg"
+  },
+  "52": {
+    "sky": "Drizzle: Moderate intensity",
+    "dayicon": "wi-day-light-wind.svg",
+    "nighticon": "wi-night-cloudy-windy.svg"
+  },
+  "53": {
+    "sky": "Drizzle: Dense intensity",
+    "dayicon": "wi-day-light-wind.svg",
+    "nighticon": "wi-night-cloudy-windy.svg"
+  },
+  "56": {
+    "sky": "Freezing Drizzle: Light intensity",
+    "dayicon": "wi-day-light-wind.svg",
+    "nighticon": "wi-night-cloudy-windy.svg"
+  },
+  "57": {
+    "sky": "Freezing Drizzle: Dense intensity",
+    "dayicon": "wi-day-light-wind.svg",
+    "nighticon": "wi-night-cloudy-windy.svg"
+  },
+  "61": {
+    "sky": "Rain: Slight intensity",
+    "dayicon": "wi-day-sleet.svg",
+    "nighticon": "wi-night-sleet.svg"
+  },
+  "62": {
+    "sky": "Rain: Moderate intensity",
+    "dayicon": "wi-day-rain.svg",
+    "nighticon": "wi-night-rain.svg"
+  },
+  "63": {
+    "sky": "Rain: Heavy intensity",
+    "dayicon": "wi-day-lightning.svg",
+    "nighticon": "wi-night-lightning.svg"
+  },
+  "66": {
+    "sky": "Freezing Rain: Light intensity",
+    "dayicon": "wi-day-snow.svg",
+    "nighticon": "wi-night-snow.svg"
+  },
+  "67": {
+    "sky": "Freezing Rain: Heavy intensity",
+    "dayicon": "wi-day-snow-thunderstrom.svg",
+    "nighticon": "wi-night-snow-thunderstrom.svg"
+  },
+  "71": {
+    "sky": "Snow fall: Slight intensity",
+    "dayicon": "wi-day-snow-wind.svg",
+    "nighticon": "wi-night-snow-wind.svg"
+  },
+  "72": {
+    "sky": "Snow fall: Moderate intensity",
+    "dayicon": "wi-day-snow-wind.svg",
+    "nighticon": "wi-night-snow-wind.svg"
+  },
+  "73": {
+    "sky": "Snow fall: Heavy intensity",
+    "dayicon": "wi-day-snow-thunderstrom.svg",
+    "nighticon": "wi-night-snow-wind.svg"
+  },
+  "77": {
+    "sky": "Snow grains",
+    "dayicon": "wi-snow.svg",
+    "nighticon": "wi-snow.svg"
+  },
+  "80": {
+    "sky": "Rain showers: Slight intensity",
+    "dayicon": "wi-day-showers.svg",
+    "nighticon": "wi-night-showers.svg"
+  },
+  "81": {
+    "sky": "Rain showers: Moderate intensity",
+    "dayicon": "wi-day-showers.svg",
+    "nighticon": "wi-night-showers.svg"
+  },
+  "82": {
+    "sky": "Rain showers: Violent intensity",
+    "dayicon": "wi-day-showers.svg",
+    "nighticon": "wi-night-showers.svg"
+  },
+  "85": {
+    "sky": "Snow showers: Slight intensity",
+    "dayicon": "wi-day-snow.svg",
+    "nighticon": "wi-night-snow.svg"
+  },
+  "86": {
+    "sky": "Snow showers: Heavy intensity",
+    "dayicon": "wi-day-snow-thunderstrom.svg",
+    "nighticon": "wi-night-snow-thunderstrom.svg"
+  },
+  "95": {
+    "sky": "Thunderstorm: Slight",
+    "dayicon": "wi-day-lightning.svg",
+    "nighticon": "wi-night-lightning.svg"
+  },
+  "96": {
+    "sky": "Thunderstorm: Slight with hail",
+    "dayicon": "wi-day-lightning.svg",
+    "nighticon": "wi-night-lightning.svg"
+  },
+  "99": {
+    "sky": "Thunderstorm: Heavy with hail",
+    "dayicon": "wi-day-lightning.svg",
+    "nighticon": "wi-night-lightning.svg"
+  }
+}

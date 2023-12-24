@@ -1,13 +1,548 @@
-body {
+@import "./assets/fonts/inter/inter.css";
+* {
+  /* Text rendering */
+  text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -webkit-text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "Inter var";
+  font-feature-settings: "salt";
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+  /* Remove the focus ring */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* HTML and Body default styles */
+html,
+body {
+  margin: 12px;
+  font-size: 100%;
+  color: white;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgb(43, 50, 178) 0%,
+    rgb(20, 136, 204) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    margin: 20px;
+  }
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 920px) {
+  .main-container {
+    width: 880px;
+    margin: 8px auto;
+    font-size: 1.1em;
+  }
+}
+
+/* location-and-date */
+.location-and-date {
+  width: 100%;
+}
+
+.location-and-date__location {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+/* current-temperature */
+.current-temperature {
+  display: flex;
+  margin-top: 0.25em;
+  width: 100%;
+}
+
+.current-temperature__icon-container {
+  flex-grow: 1.25;
+  text-align: center;
+}
+
+.current-temperature__content-container {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.current-temperature__icon {
+  width: 8em;
+}
+
+.current-temperature__value {
+  font-size: 5.25em;
+  font-weight: 300;
+}
+
+.current-temperature__summary {
+  margin-top: -0.5em;
+  margin-left: -0.6em;
+  text-align: center;
+  font-size: 1.125em;
+}
+
+/* current-stats */
+.current-stats {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1em;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (min-width: 700px) {
+  .current-stats {
+    margin-bottom: 1em;
+    padding-bottom: 0;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+  }
+}
+
+.current-stats__value {
+  margin-top: 1em;
+  font-size: 1.44em;
+}
+
+.current-stats__label {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 700px) {
+  .current-temperature,
+  .current-stats {
+    width: 50%;
+  }
+}
+
+/* weather-by-hour */
+.weather-by-hour {
+  display: none;
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .weather-by-hour {
+    display: block;
+  }
+}
+
+.weather-by-hour__container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 8px;
+}
+
+.weather-by-hour__heading,
+.next-5-days__heading {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1em;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .weather-by-hour__heading,
+  .next-5-days__heading {
+    font-size: 1.125em;
+  }
+}
+
+.weather-by-hour__item {
+  padding: 0.8em 0;
+  width: 13%;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.15);
+  font-size: 1.125em;
+  text-align: center;
+}
+
+@media screen and (min-width: 880px) {
+  .weather-by-hour__item {
+    width: 6.05em;
+  }
+}
+
+.weather-by-hour__hour {
+  margin-bottom: 0.5em;
+}
+
+/* next-5-days */
+.next-5-days {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.next-5-days__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.next-5-days__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0.3em;
+  padding: 0.8em 0;
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 1.19em;
+  text-align: center;
+}
+
+.next-5-days__label {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.83em;
+}
+
+.next-5-days__date,
+.next-5-days__high,
+.next-5-days__low,
+.next-5-days__icon,
+.next-5-days__rain,
+.next-5-days__wind {
+  width: 33.33333%;
+  font-size: 0.95em;
+}
+
+.next-5-days__date,
+.next-5-days__high,
+.next-5-days__low {
+  margin-bottom: 0.6em;
+}
+
+@media screen and (min-width: 450px) {
+  .next-5-days__date,
+  .next-5-days__high,
+  .next-5-days__low,
+  .next-5-days__icon,
+  .next-5-days__rain,
+  .next-5-days__wind {
+    width: 16.666666%;
+    margin-bottom: initial;
+  }
+
+  .next-5-days__date {
+    order: -2;
+  }
+
+  .next-5-days__icon {
+    order: -1;
+  }
+}
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.search-box {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.loading {
+  max-height: 100px; /* Adjust the height as needed */
+  transition: max-height 0.3s ease-in; /* Change to ease-in */
+}
+
+.results {
+  max-height: 200px; /* Adjust the height as needed */
+  transition: max-height 0.3s ease-in; /* Change to ease-in */
+}
+.img__small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.img__small img {
+  height: 54px;
+  width: 54px;
+}
+
+.current-temperature__icon-container img {
+  height: 168px;
+  width: 168px;
+}
+
+.weather-by-hour.expanded .weather-by-hour__container {
+  max-height: 1000px; /* Set an appropriate value based on your content height */
+}
+
+.next-5-days__icon img {
+  height: 45px;
+  width: 45px;
+}
+
+.next-5-days__icon {
+  display: flex;
+  justify-content: center;
+}
+
+.frame {
+  width: 500px;
+  height: auto;
+  margin: 15% auto 0;
+  width: 100%;
+}
+
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/**
+ * Paper Plane
+ */
+/*Paper Plane: Container*/
+.plane-container {
+  width: 200px;
+  margin: 0px auto;
+  z-index: 3;
+}
+/*Paper Plane: Image*/
+.plane {
+  width: 100%;
+  height: 60px;
+}
+
+/*Paper Plane: Animation*/
+.plane-container {
+  -webkit-animation: paper-plane-scoping 2s alternate infinite;
+  -moz-animation: paper-plane-scoping 2s alternate infinite;
+  animation: paper-plane-scoping 2s alternate infinite;
+
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@keyframes paper-plane-scoping {
+  0% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+
+.plane {
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+
+  -webkit-animation: paper-plane-soaring 4s forwards infinite;
+  -moz-animation: paper-plane-soaring 4s forwards infinite;
+  animation: paper-plane-soaring 4s forwards infinite;
+}
+@keyframes paper-plane-soaring {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  40% {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  50% {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  60% {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  70% {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+/**
+ * Clouds
+ */
+.clouds {
+  position: absolute;
+  top: 400px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  transform: translateZ(0);
+}
+
+.cloud {
+  position: absolute;
+  top: 20%;
+  width: 300px;
+  right: 0;
+  opacity: 1;
+}
+
+.cloud.front {
+  z-index: 9;
+}
+
+.cloud.distant {
+  z-index: 1;
+}
+
+.cloud.background {
+  z-index: 1;
+}
+
+/*Cloud Sizing*/
+.cloud.smaller {
+  margin-right: 400px;
+  width: 100px;
+  margin-top: 50px;
+}
+
+.cloud.small {
+  margin-right: 200px;
+  width: 150px;
+}
+
+.cloud.big {
+  width: 500px;
+  margin-top: 50px;
+  margin-right: 150px;
+}
+
+.cloud.massive {
+  width: 600px;
+  margin-top: 20px;
+  margin-right: 0px;
+}
+
+/*Cloud: Animation*/
+.cloud {
+  -webkit-animation-name: cloud-movement;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 8s;
+
+  -moz-animation-name: cloud-movement;
+  -moz-animation-timing-function: linear;
+  -moz-animation-direction: forwards;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 8s;
+
+  animation-name: cloud-movement;
+  animation-timing-function: linear;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+
+.slow {
+  -webkit-animation-duration: 9.2s;
+  -moz-animation-duration: 9.2s;
+  animation-duration: 9.2s;
+}
+
+.slower {
+  -webkit-animation-duration: 11.2s;
+  -moz-animation-duration: 11.2s;
+  animation-duration: 11.2s;
+}
+
+.slowest {
+  -webkit-animation-duration: 13.5s;
+  -moz-animation-duration: 13.5s;
+  animation-duration: 13.5s;
+}
+
+.super-slow {
+  -webkit-animation-duration: 20.5s;
+  -moz-animation-duration: 20.5s;
+  animation-duration: 20.5s;
+}
+
+@keyframes cloud-movement {
+  0% {
+    opacity: 0.1;
+    -webkit-transform: translateX(300px);
+    -moz-transform: translateX(300px);
+    transform: translateX(300px);
+  }
+  10% {
+    opacity: 0.7;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-1000px);
+    -moz-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+  }
+}
+
+/*Grid 6x6 */
+.gridcontainer {
+  @apply grid grid-cols-3 grid-rows-2 gap-0 flex-1 items-center;
+}
+.gridbox {
+  @apply col-span-1 row-span-1 flex items-center justify-center h-full;
+}
+
+/* Tailwindcss init */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
