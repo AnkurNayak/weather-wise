@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# WeatherWise
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+WeatherWise is a simple and elegant web app that provides real-time weather information. The app offers a clean and intuitive interface, allowing users to quickly access weather details for any location available in Open-Meteo API. 
 
-## Available Scripts
+### Demo : https://ankurnayak.github.io/weather-wise
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Real-time Weather Data:** Get up-to-date weather information for any location.
+- **Responsive Design:** The app is designed to work seamlessly on various devices.
+- **Background Visuals:** Enjoy dynamic background visuals.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
+- **React:** [Front-end library for building user interfaces](https://legacy.reactjs.org/docs/getting-started.html).
+- **Tailwind CSS:** [A utility-first CSS framework for styling](https://tailwindcss.com/).
+- **Open-Meteo API:** [Integration for fetching weather data](https://open-meteo.com).
+- **static-Layout:** https://github.com/JonUK/responsive-web-weather-app
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/AnkurNayak/WeatherWise.git
+Install dependencies:
 
-### `npm run build`
+bash
+Copy code
+cd weatherwise
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Start the app:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+Copy code
+npm start
+The app will be accessible at http://localhost:3000.
 
-### `npm run eject`
+Usage
+Enter the location in the search bar.
+View real-time weather information and background visuals.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Screenshots
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![page2](https://github.com/AnkurNayak/weather-wise/assets/39209074/bf3d51b0-5069-4d28-b91a-08d89500839e)
+![page3](https://github.com/AnkurNayak/weather-wise/assets/39209074/e410b556-e0da-46a3-8355-52b4ec5e5363)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Author: [Ankur Nayak](https://www.linkedin.com/in/dr-ankur-nayak)
